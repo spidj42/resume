@@ -13,7 +13,7 @@
     <div class="container">
         <div class="info">
             <img src="img/avatar.jpg" alt="Мое фото" class="avatar">
-            <h1>Спиридов Дмитрий</h1>
+            <h2>Спиридов Дмитрий</h2>
             <div class="info-text">
                 <p>Я <strong>программист-консультант</strong> ТФОМС.</p>
                 <p>Я увлекаюсь <em>рыбалкой и программированием</em></p>
@@ -24,19 +24,19 @@
         </div>
         <div class="card bg-red">
             <h2>Мои хобби</h2>
-            <ol>
+            <ol class="list">
                 <li>Рыбалка</li>
                 <li>Путешествия</li>
             </ol>
         </div>
         <div class="card bg-yellow">
             <h2>Опыт работы</h2>
-            <table >
-                <thead>
+            <table class="table">
+                <!-- <thead>
                     <th>Название</th>
                     <th>Должность</th>
                     <th>Год</th>                
-                </thead>
+                </thead> -->
                 <tbody>
                     <tr>
                         <td>ТФОМС Кемеровской области</td>
@@ -61,25 +61,24 @@
                 </tbody>
             </table>
         </div>
-        <div>
-            <h2>Связаться со мной</h2>
-            <form>
-                <div>
+        <form action="/" class="form">
+            <h2>Связаться со мной</h2>  
+            <div class="form-row">
+                <div class="form-group">
                     <label for="name">Ваше имя: </label>
                     <input type="text" id="name" placeholder="Введите имя">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Ваше email: </label>
                     <input type="email" id="email" placeholder="Введите email">
                 </div>
-                <div>
-                    <label for="message">Ваше сообщение: </label>
-                    <br>
-                    <textarea id="message" cols="30" rows="5"  placeholder="Введите сообщение..."></textarea>
-                </div>
-                <button class="btn" type="submit">Отправить</button>
-            </form>
-        </div>
+            </div>              
+            <div class="form-group">
+                <label for="message">Ваше сообщение: </label>
+                <textarea id="message" cols="30" rows="5"  placeholder="Введите сообщение..."></textarea>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
     </div>
 </body>
 </html>
